@@ -1,0 +1,75 @@
+@use "../../../../assets/styles/partials/colors" as *;
+@use "../../../../assets/styles/partials/variables" as *;
+@use "../../../../assets/styles/partials/responsive" as *;
+$card-width-md: 300px;
+$card-width-sm: 250px;
+$rank-diameter-md: 16px;
+.track-card {
+  background-color: $clr-void;
+  color: $clr-karl;
+  border-radius: $radius-md;
+  overflow: hidden;
+  padding: $padding-md;
+  display: flex;
+  align-items: start;
+  gap: $margin-md;
+  width: $card-width-sm;
+  @include md {
+    width: $card-width-md;
+  }
+  position: relative;
+  &__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: calc($margin-sm/2);
+  }
+  &__name {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1rem;
+    @include md {
+      max-width: 20ch;
+      font-size: 1.25rem;
+    }
+    text-overflow: ellipsis;
+    color: $clr-peach;
+  }
+  &__artist {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 20ch;
+    text-overflow: ellipsis;
+  }
+  &__duration {
+    font-style: italic;
+    color: $clr-gandalf;
+    font-size: 0.75rem;
+  }
+  &__rank-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: $padding-sm;
+    justify-content: center;
+  }
+  &__rank {
+    padding: calc($padding-sm/2);
+    background-color: $clr-light-orange;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    width: $rank-diameter-md;
+    height: $rank-diameter-md;
+    text-align: center;
+    margin: 0;
+  }
+}

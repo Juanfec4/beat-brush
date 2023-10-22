@@ -1,0 +1,20 @@
+@use "../../../assets/styles/partials/colors" as *;
+@use "../../../assets/styles/partials/variables" as *;
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  gap: calc($margin-sm/2);
+  &__label {
+    color: $clr-gandalf;
+    font-size: 0.75rem;
+  }
+  &__field {
+    background-color: $clr-void;
+    border: none;
+    border-radius: $radius-sm;
+    padding: $padding-sm;
+    color: $clr-snowman;
+    outline: solid 1px $clr-clooney;
+  }
+}

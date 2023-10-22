@@ -1,0 +1,23 @@
+@use "../../assets/styles/partials/variables" as *;
+@use "../../assets/styles/partials/colors" as *;
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__card {
+    background-color: $clr-snowman;
+    border-radius: $radius-sm;
+    padding: $padding-lg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: calc($padding-lg * 2);
+  }
+  &__title {
+    color: $clr-peach;
+    max-width: 20ch;
+    text-align: center;
+  }
+}

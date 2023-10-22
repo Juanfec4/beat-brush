@@ -1,0 +1,24 @@
+@use "../../../../assets/styles/partials/variables" as *;
+@use "../../../../assets/styles/partials/responsive" as *;
+.artist-gallery {
+  padding: $padding-md;
+  &__items {
+    margin: 0 auto;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    @include md {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include lg {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    gap: $margin-lg;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

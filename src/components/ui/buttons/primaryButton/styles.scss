@@ -1,0 +1,15 @@
+@use "../../../../assets/styles/partials/colors" as *;
+@use "../../../../assets/styles/partials/variables" as *;
+.primary-button {
+  background-color: $clr-peach;
+  border: none;
+  border-radius: $radius-sm;
+  color: $clr-snowman;
+  font-weight: 700;
+  padding: $padding-sm $padding-md;
+  width: max-content;
+  cursor: pointer;
+  &:hover {
+    background-color: $clr-orange;
+  }
+}

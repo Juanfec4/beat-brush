@@ -1,0 +1,75 @@
+@use "../../assets/styles/partials/colors" as *;
+@use "../../assets/styles/partials/variables" as *;
+@use "../../assets/styles/partials/responsive" as *;
+
+.receipts {
+  &__title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $margin-md;
+  }
+  &__title {
+    color: $clr-snowman;
+    border-left: solid 4px $clr-peach;
+    padding-left: $padding-sm;
+  }
+  &__description-text {
+    color: $clr-gandalf;
+    max-width: 80ch;
+    text-align: center;
+  }
+  &__generator-section {
+    display: flex;
+    flex-direction: column;
+    @include md {
+      flex-direction: row;
+    }
+  }
+  &__generator-output {
+    @include md {
+      margin: 0;
+      padding: $padding-md;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+  }
+  &__generator-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $margin-md;
+    border: solid 1px $clr-gandalf;
+    border-radius: $radius-sm;
+    height: min-content;
+    padding: $padding-md;
+    max-width: min-content;
+    margin: 0 auto;
+    @include md {
+      margin: $margin-md;
+      max-width: max-content;
+    }
+  }
+  &__controls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include md {
+      padding: $padding-lg;
+    }
+  }
+  &__controls-top {
+    display: flex;
+    flex-direction: column;
+    @include md {
+      flex-direction: row;
+    }
+  }
+  &__generator-title {
+    color: $clr-snowman;
+    border-left: solid 2px $clr-orange;
+    padding-left: $padding-md;
+  }
+}

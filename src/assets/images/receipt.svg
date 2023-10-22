@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="253.66666"
+   height="519.10376"
+   viewBox="0 0 253.66666 519.10376"
+   sodipodi:docname="receipt.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:export-bgcolor="#ffffff00" />
+  <g
+     id="g1"
+     inkscape:groupmode="layer"
+     inkscape:label="1"
+     transform="translate(-482.40249,-27.545168)">
+    <g
+       id="group-R5"
+       inkscape:export-filename="receipr.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="translate(2.6658714,-11.91663)">
+      <path
+         id="path406"
+         d="M 733.40328,557.88952 V 39.461798 H 479.73662 V 558.56552"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.133333"
+         inkscape:export-filename="../../dev/beat-brush-client/src/assets/images/receipt.svg"
+         inkscape:export-xdpi="302.75955"
+         inkscape:export-ydpi="302.75955"
+         sodipodi:nodetypes="cccc" />
+    </g>
+  </g>
+</svg>

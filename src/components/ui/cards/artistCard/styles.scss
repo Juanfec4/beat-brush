@@ -1,0 +1,36 @@
+@use "../../../../assets/styles/partials/colors" as *;
+@use "../../../../assets/styles/partials/variables" as *;
+
+$image-height-md: 200px;
+$image-width-md: 200px;
+
+.artist-card {
+  position: relative;
+  width: max-content;
+  height: max-content;
+  border-radius: $radius-sm;
+  overflow: hidden;
+  &__image {
+    height: $image-height-md;
+    width: $image-width-md;
+    object-fit: cover;
+
+    vertical-align: bottom;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($clr-void, 0.5);
+  }
+  &__name {
+    color: $clr-snowman;
+    max-width: 15ch;
+    text-align: center;
+  }
+}

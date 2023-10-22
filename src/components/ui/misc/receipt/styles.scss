@@ -1,0 +1,121 @@
+@use "../../../../assets/styles/partials/variables" as *;
+@use "../../../../assets/styles/partials/colors" as *;
+@use "../../../../assets/styles/partials/responsive" as *;
+.receipt {
+  position: relative;
+  max-width: max-content;
+  box-sizing: content-box;
+  overflow: hidden;
+  scale: 0.8;
+  @include md {
+    scale: 1;
+  }
+  &__background {
+    width: 350px;
+    vertical-align: bottom;
+  }
+  &__content-container {
+    background-image: url("/wrinkled-paper.jpg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &__content-overlay {
+    padding: $padding-lg;
+    height: 100%;
+  }
+  &__header {
+    padding: $padding-sm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: dashed 1px $clr-void;
+    border-top: dashed 1px $clr-void;
+  }
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $fnt-merchant;
+    padding: $padding-sm;
+    font-size: 1.75rem;
+    color: $clr-void;
+    font-weight: 700;
+  }
+  &__sub-title {
+    font-family: $fnt-merchant;
+    margin: calc($margin-sm/4) 0;
+    color: $clr-void;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  &__table {
+    font-family: $fnt-merchant;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  &__table-container {
+    width: 100%;
+  }
+  &__table-head {
+    border-bottom: dashed 1px $clr-void;
+  }
+  &__table-body {
+    border-top: dashed 1px $clr-void;
+    border-bottom: dashed 1px $clr-void;
+  }
+  &__table-header {
+    font-family: $fnt-merchant;
+    font-weight: 500;
+    padding: $padding-sm 0;
+  }
+  &__table-data {
+    font-family: $fnt-merchant;
+    padding: calc($padding-sm/2);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
+  &__summary-container {
+    border-bottom: dashed 1px $clr-void;
+  }
+  &__summary-element {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__data {
+    @extend .receipt__table-data;
+  }
+  &__payment-container {
+    border-bottom: dashed 1px $clr-void;
+  }
+  &__payment-element {
+    display: flex;
+  }
+  &__footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: $padding-md;
+    gap: $margin-sm;
+  }
+  &__spotify {
+    width: 25px;
+    height: 25px;
+  }
+  &__qr {
+    width: 50px;
+    height: 50px;
+    vertical-align: bottom;
+  }
+  &__footer-sub-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $padding-md;
+  }
+  &__footer-text {
+    font-family: $fnt-merchant;
+  }
+}

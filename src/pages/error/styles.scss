@@ -1,0 +1,11 @@
+@use "../../assets/styles/partials/variables" as *;
+@use "../../assets/styles/partials/colors" as *;
+
+.error {
+  &__title {
+    color: $clr-snowman;
+    text-align: center;
+    max-width: 30ch;
+    margin: 0 auto;
+  }
+}

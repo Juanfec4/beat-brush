@@ -1,0 +1,30 @@
+@use "../../../../assets/styles/partials/colors" as *;
+@use "../../../../assets/styles/partials/variables" as *;
+
+.time-frame-menu {
+  list-style: none;
+  padding: 0;
+  background-color: $clr-void;
+  width: max-content;
+  border-radius: $radius-md;
+  overflow: hidden;
+  margin: 0;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__button {
+    border: none;
+    background-color: transparent;
+    padding: $padding-sm;
+    width: 100%;
+    color: $clr-clooney;
+    cursor: pointer;
+    &--active {
+      @extend .time-frame-menu__button;
+      background-color: $clr-peach;
+      color: $clr-void;
+    }
+  }
+}

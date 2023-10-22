@@ -1,0 +1,21 @@
+@use "../../../../assets/styles/partials/colors" as *;
+@use "../../../../assets/styles/partials/variables" as *;
+.toggle-buttons {
+  display: flex;
+  background-color: $clr-void;
+  width: max-content;
+  border-radius: $radius-md;
+  overflow: hidden;
+  &__option {
+    background-color: transparent;
+    border: none;
+    color: $clr-snowman;
+    padding: $padding-sm;
+    cursor: pointer;
+    &--active {
+      @extend .toggle-buttons__option;
+      color: $clr-void;
+      background-color: $clr-peach;
+    }
+  }
+}

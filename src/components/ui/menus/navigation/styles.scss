@@ -1,0 +1,24 @@
+@use "../../../../assets/styles/partials/colors" as *;
+@use "../../../../assets/styles/partials/variables" as *;
+
+.nav-menu {
+  &__list {
+    display: flex;
+    gap: $margin-md;
+  }
+  &__link-item {
+    color: $clr-clooney;
+    padding: $padding-sm;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    &.active {
+      @extend .nav-menu__link-item;
+      color: $clr-peach;
+      padding: $padding-sm;
+      border-bottom: 3px solid $clr-peach;
+      background-color: rgba($clr-peach, 0.05);
+      border-top-right-radius: $radius-sm;
+      border-top-left-radius: $radius-sm;
+    }
+  }
+}
